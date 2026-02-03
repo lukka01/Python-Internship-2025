@@ -3,22 +3,19 @@
 
 {% block content%}
 
-<div class= "container-md py-3 px-4 w-80 p-3 shadow border  border-2 border rounded-3 w-80 mx-auto">
-    <img src="{{ name['img'] }}"/>
-    <table>
-        <tr>
-            <th>სახელი: </th>
-            <td>{{name['name']}} {{name['surname']}} </td>
-        </tr>
+<div class="container-md py-3 px-4 w-50 shadow border border-2 rounded-3 mx-auto">
+    <img src="/static/imgs/{{ name['img'] }}" class="img-fluid d-block mx-auto mb-3" alt="image">
 
+    <table class="table table-sm mb-0">
         <tr>
-            <th>ფასი: </th>
-            <td>{{name['ფასი']}}</td>
+            <th>სახელი:</th>
+            <td>{{ name['name'] }} {{ name['surname'] }}</td>
         </tr>
-
+        <tr>
+            <th>ფასი:</th>
+            <td>{{ name['ფასი'] }}</td>
+        </tr>
     </table>
-    {{ name['name'] }}
-
 </div>
 
 
